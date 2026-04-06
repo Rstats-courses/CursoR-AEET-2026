@@ -1,20 +1,9 @@
-# Quarto course website template
+# Optimizando el uso de R para el análisis de datos en ecología (7ª ed.)
 
-A template for course websites developed with [Quarto](https://quarto.org) and hosted on GitHub.
+<https://tinyurl.com/aeet2026>
 
-This is all configured so you only need to edit the source files in Quarto (.qmd). The website is generated and hosted automatically by GitHub.
+Curso organizado por la Asociación Española de Ecología Terrestre ([AEET](http://www.aeet.org)) y el [Instituto Pirenaico de Ecología](https://www.ipe.csic.es/) (CSIC), en colaboración con la [Facultad de Biología](https://biologia.us.es/) de la [Universidad de Sevilla](https://www.us.es/), la [Estación Biológica de Doñana](https://www.ebd.csic.es) (CSIC) y la [Swedish University of Agricultural Sciences](https://www.slu.se/en/).
 
-Example website: https://pakillo.github.io/quarto-course-website-template (see also https://github.com/rstudio-conf-2022/teach-ds-course-website for a more developed example).
+Impartido por [Ignasi Bartomeus](https://bartomeuslab.com/), [Elena Quintero](https://elequintero.github.io/) y [Francisco Rodríguez-Sánchez](https://frodriguezsanchez.net/).
 
-
-## Using this template
-
-1. Click on green button "Use this template" -> "Create a new repository"
-
-2. Choose a name for your repository
-
-3. Important: check 'Include all branches' when creating the repository (because we will need the `gh-pages` branch to host the website).
-
-4. Once your repo is created, remember to update the links to your GitHub repo in [_quarto.yml](_quarto.yml), replacing 'Pakillo' with your GitHub username.
-
-
+Jaca (Huesca), 4-8 mayo 2026.
