@@ -1,0 +1,17 @@
+---
+title: "Programa"
+---
+
+Mañanas: 9:00 - 13:30
+
+Tardes: 15:00 - 17:30
+
+|     |                Mañana                     |         Tarde                          |
+|:---:|:-----------------------------------------:|:--------------------------------------:|
+|  L  | Intro + Data management                   | Data visualisation                     |
+|  M  | Generalised Linear Models                 | git + GitHub                           |
+|  X  | Mixed models                              | Reproducible workflows                 |
+|  J  | Multivariate analyses                     | GAM + Bayes                            |
+|  V  | Causal inference + Functional programming | Student's work                         |
+
+

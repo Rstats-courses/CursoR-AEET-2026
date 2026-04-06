@@ -1,0 +1,53 @@
+---
+title: "Materiales"
+---
+
+Datasets: [zip file](data/datasets.zip) [individual datasets](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/data)
+
+
+### LUNES
+
+- Welcome: [slides](slides/welcome.pdf)
+
+- Common-sense stats: [slides](slides/Common_Sense_Stats/CommonSense.html)
+
+- Data management: [slides](slides/data_management.html), [slides_pdf](slides/data_management.pdf), [script](scripts/data_management.R)
+
+- Data visualisation: [slides](slides/data_visualization.html), [slides_pdf](slides/data_visualization.pdf), [script](scripts/data_visualization.R)
+
+
+### MARTES
+
+- GLM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
+
+- Git & GitHub: [slides](slides/github.html)
+
+
+### MIÉRCOLES
+
+- GLMM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
+
+- Reproducible workflows: [slides](slides/ReproducibleScience.pdf), [Rmd slides](slides/Rmarkdown_intro.html), [Rmd_examples](scripts/Rmd_examples.zip)
+
+
+### JUEVES
+
+- Multivariate analyses: [script](scripts/multivariante_notes.R)
+
+- GAM + Bayes: [slides](slides/GLMs.pdf), [GAMs](slides/GAMs.pdf),  [scripts](https://github.com/Rstats-courses/CursoR-AEET-2022/tree/main/scripts)
+
+
+### VIERNES
+
+- Functional programming: [script](scripts/Functional_programming.R)
+
+
+
+<br>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+
+
+
