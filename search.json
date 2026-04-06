@@ -4,29 +4,83 @@
     "href": "materials.html",
     "title": "Course Materials",
     "section": "",
-    "text": "Datasets\nSlides",
-    "crumbs": [
-      "Materials"
-    ]
+    "text": "Datasets\nSlides"
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations",
-    "crumbs": [
-      "Schedule"
-    ]
+    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Course Title",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
     "section": "",
-    "text": "Course info & details here",
+    "text": "https://tinyurl.com/aeet2026\nCurso organizado por la Asociación Española de Ecología Terrestre (AEET) y el Instituto Pirenaico de Ecología (CSIC), en colaboración con la Facultad de Biología de la Universidad de Sevilla, la Estación Biológica de Doñana (CSIC) y la Swedish University of Agricultural Sciences.\nImpartido por Ignasi Bartomeus, Elena Quintero y Francisco Rodríguez-Sánchez.\nJaca (Huesca), 4-8 mayo 2026.",
     "crumbs": [
-      "Home"
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#resumen",
+    "href": "index.html#resumen",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
+    "section": "Resumen",
+    "text": "Resumen\nEl lenguaje y programa estadístico R se ha establecido como una de las herramientas principales para el análisis de datos en ecología (y otras muchas disciplinas científicas). En este curso, de nivel medio-avanzado, profundizaremos tanto en aspectos de programación en R como en el manejo y visualización de datos y en los análisis estadísticos más frecuentes en ecología (modelos mixtos, modelos generalizados, análisis multivariantes, etc).\nEl curso pretende establecer buenos fundamentos teóricos mediante una aproximación fundamentalmente práctica. El método docente se basa en aprender haciendo (“learn by doing”): aprenderemos programación avanzada de R (e.g. funciones, vectorización, simulaciones, computación reproducible) mientras desarrollamos diversos análisis y visualización de datos. Se repasarán los fundamentos y aplicación de diferentes técnicas estadísticas mezclando el componente práctico y teórico mediante el desarrollo de múltiplos ejemplos y casos de estudio, enfatizando la comprensión del funcionamiento de los diversos análisis, errores más comunes, buenas prácticas y su uso adecuado.\nEl curso es ideal para alumnos que ya utilizan R para analizar datos pero sienten que no están aprovechando a fondo todo el potencial de R ni de sus datos. Durante el curso los alumnos podrán plantear dudas sobre cómo analizar sus propios datos.",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#dirigido-a",
+    "href": "index.html#dirigido-a",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
+    "section": "Dirigido a",
+    "text": "Dirigido a\nEl curso está dirigido a estudiantes fundamentalmente de postgrado, profesores e investigadores con conocimientos básicos de estadística que ya sepan utilizar R pero deseen profundizar en el manejo de R para el análisis de datos en ecología. El curso ofrece la oportunidad de mejorar los conocimientos de estadística y las capacidades en el manejo de una herramienta muy potente y versátil para el análisis de datos, por lo que contribuirá a la formación técnica de alumnos de postgrado con un perfil investigador, así como de investigadores postdoctorales y profesores.\nEl alumno debe saber interpretar modelos lineales simples (regresión lineal) y estar familiarizado con R (importar datos, manejar data frames, hacer gráficas sencillas, ajustar modelos simples tipo lm o glm). Se desaconseja la inscripción de alumnos aún con nivel de iniciación a R, ya que el ritmo del curso es intenso y se haría difícil su aprovechamiento. Además es necesario tener un nivel básico de inglés ya que muchas diapositivas se presentan en ese idioma.",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#lugar",
+    "href": "index.html#lugar",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
+    "section": "Lugar",
+    "text": "Lugar\nInstituto Pirenaico de Ecología\nAvenida de Nuestra Señora de la Victoria 16\nJaca (Huesca)\nMapa",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#foro",
+    "href": "index.html#foro",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
+    "section": "Foro",
+    "text": "Foro\nForo para debates, preguntas, etc: https://github.com/Rstats-courses/CursoR-AEET-2026/discussions",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#feedback",
+    "href": "index.html#feedback",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
+    "section": "Feedback",
+    "text": "Feedback\nVuestros comentarios son muy útiles para la mejora continua del curso. Podéis dejar vuestros comentarios en este formulario anónimo: https://forms.gle/. ¡Gracias!",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#bibliografía-recomendada",
+    "href": "index.html#bibliografía-recomendada",
+    "title": "Optimizando el uso de R para el análisis de datos en Ecología",
+    "section": "Bibliografía recomendada",
+    "text": "Bibliografía recomendada\n\nAdvanced R programming\nR for Data Science\nR graphics cookbook\nFundamentals of data visualization\nData visualization: a practical introduction\nGraphical data analysis with R\nAnalysing ecological data\nMixed Effects Models and Extensions in Ecology with R\nData analysis using regression and multilevel/hierarchical models\nRegression and other stories\nNumerical ecology\nNumerical ecology with R\nHappy git and GitHub for the useR\nGeocomputation with R\nEco-stats: data analysis in ecology\nEcological Models and Data in R\nStatistical Rethinking\nStatistical rethinking with brms, ggplot2, and the tidyverse\nBayesian Population Analysis using WinBugs\nApplied Hierarchical Modeling in Ecology\nEnvironmental Data Analysis\nModels demystified\nIntroduction to multilevel modeling\nStatistics for the experimental biologist\nBeyond multiple linear regression",
+    "crumbs": [
+      "Inicio"
     ]
   }
 ]
