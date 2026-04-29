@@ -42,7 +42,7 @@ Foro para debates, preguntas, etc: <https://github.com/Rstats-courses/CursoR-AEE
 
 ## Feedback
 
-Vuestros comentarios son muy útiles para la mejora continua del curso. Podéis dejar vuestros comentarios en este formulario anónimo: <https://forms.gle/>. ¡Gracias!
+Vuestros comentarios son muy útiles para la mejora continua del curso. Podéis dejar vuestros comentarios en este formulario anónimo: <https://forms.gle/YYbaiHtdp6G17VJY7>. ¡Gracias!
 
 
 ## Bibliografía recomendada
