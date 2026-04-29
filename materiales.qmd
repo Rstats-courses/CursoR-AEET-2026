@@ -39,6 +39,8 @@ Datasets: [zip file](data/datasets.zip) [individual datasets](https://github.com
 
 ### VIERNES
 
+- Causal Inference: [slides](slides/causal.pdf)
+
 - Functional programming: [script](scripts/Functional_programming.R)
 
 
