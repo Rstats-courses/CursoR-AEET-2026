@@ -1,16 +1,17 @@
 install.packages(
-  c("arm",
-    "automagic",
-    "bayesplot",
+  c(
+    # "arm",
+    # "automagic",
+    # "bayesplot",
     "brms",
     "broom.mixed",
-    "checkpoint",
+    # "checkpoint",
     # "containerit",
     "devtools",
     "DHARMa",
-    "DT",
+    # "DT",
     "easystats",
-    "effects",
+    # "effects",
     "equatiomatic",
     # "fertile", # GH
     "ggmosaic",
