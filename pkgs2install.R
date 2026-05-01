@@ -14,7 +14,7 @@ install.packages(
     # "effects",
     "equatiomatic",
     # "fertile", # GH
-    "ggmosaic",
+    # "ggmosaic",
     "ggrepel",
     "ggthemes",
     "glmmTMB",
