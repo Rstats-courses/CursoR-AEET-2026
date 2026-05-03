@@ -11,16 +11,16 @@ Datasets: [zip file](data/datasets.zip) [individual datasets](https://github.com
 
 - Common-sense stats: [slides](slides/Common_Sense_Stats/CommonSense.html)
 
-- Data management: [slides](slides/data_management.html), [script](scripts/data_management.R)
+- Data management: [slides](slides/data_management.html), [script](_scripts/data_management.R)
 
-- Data visualisation: [slides](slides/data_visualization.html), [script](scripts/data_visualization.R)
+- Data visualisation: [slides](slides/data_visualization.html), [script](_scripts/data_visualization.R)
 
 
 ### MARTES
 
 - GLM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
 
-- Git & GitHub: [slides](slides/github.html)
+- Git & GitHub: [slides](slides/github_intro.html)
 
 
 ### MIÉRCOLES
