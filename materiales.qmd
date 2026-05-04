@@ -18,30 +18,30 @@ Datasets: [zip file](data/datasets.zip) [individual datasets](https://github.com
 
 ### MARTES
 
-- GLM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
+- GLM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/_scripts)
 
 - Git & GitHub: [slides](slides/github_intro.html)
 
 
 ### MIÉRCOLES
 
-- GLMM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
+- GLMM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/_scripts)
 
-- Reproducible workflows: [slides](slides/ReproducibleScience.pdf), [Rmd slides](slides/Rmarkdown_intro.html), [Rmd_examples](scripts/Rmd_examples.zip)
+- Reproducible workflows: [slides](slides/ReproducibleScience.pdf), [Rmd slides](slides/Rmarkdown_intro.html), [Rmd_examples](_scripts/Rmd_examples.zip)
 
 
 ### JUEVES
 
-- Multivariate analyses: [script](scripts/multivariante_notes.R)
+- Multivariate analyses: [script](_scripts/multivariante_notes.R)
 
-- GAM + Bayes: [slides](slides/Bayes_GAM.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
+- GAM + Bayes: [slides](slides/Bayes_GAM.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/_scripts)
 
 
 ### VIERNES
 
 - Causal Inference: [slides](slides/causality.pdf)
 
-- Functional programming: [script](scripts/Functional_programming.R)
+- Functional programming: [script](_scripts/Functional_programming.R)
 
 
 
