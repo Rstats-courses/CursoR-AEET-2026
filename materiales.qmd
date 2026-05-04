@@ -34,12 +34,12 @@ Datasets: [zip file](data/datasets.zip) [individual datasets](https://github.com
 
 - Multivariate analyses: [script](scripts/multivariante_notes.R)
 
-- GAM + Bayes: [slides](slides/GLMs.pdf), [GAMs](slides/GAMs.pdf),  [scripts](https://github.com/Rstats-courses/CursoR-AEET-2022/tree/main/scripts)
+- GAM + Bayes: [slides](slides/Bayes_GAM.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/scripts)
 
 
 ### VIERNES
 
-- Causal Inference: [slides](slides/causal.pdf)
+- Causal Inference: [slides](slides/causality.pdf)
 
 - Functional programming: [script](scripts/Functional_programming.R)
 
