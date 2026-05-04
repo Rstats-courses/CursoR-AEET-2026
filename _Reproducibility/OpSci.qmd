@@ -1,0 +1,106 @@
+---
+title: "Open Reliable and Transparent Science"
+author: "I. Bartomeus"
+format: revealjs
+editor: visual
+---
+
+## Reproducibility
+
+> It’s important to make a workflow that you can use time and time again, and even pass on to others in such a way that you don’t have to be there to walk them through it. [Source](http://berkeleysciencereview.com/reproducible-collaborative-data-science/)
+
+> Your closest collaborator is you 6 months ago, and you don't respond to emails. <small>P. Wilson</small>
+
+Interested: [read our paper](http://www.revistaecosistemas.net/index.php/ecosistemas/article/view/1178)
+
+## What is Open Science?
+
+![](images/clipboard-26061258.png)
+
+## Why Open Science?
+
+## Why Open Science?
+
+-   Trust
+
+-   Accelerate science
+
+-   Exposure
+
+-   Citations
+
+-   ...
+
+## Risks of Open Science?
+
+## Risks of Open Science?
+
+-   Spoilers
+
+-   Miss-use
+
+-   Exposure
+
+-   Extra effort
+
+-   ...
+
+## Open Science?
+
+-   Replicability: same/similar methods, different data
+
+-   Reproducibility: same methods, same data
+
+## Is Ecology replicable?
+
+![](images/Screenshot%202025-10-19%20at%2021.19.20.png)
+
+## Why reproducibility?
+
+-   For you: Plan Ahead
+
+    ![](images/clipboard-3065949338.png)
+
+## Is Science reproducible?
+
+![](images/Screenshot%202025-10-19%20at%2021.20.40.png)
+
+## Data usability
+
+-   Meta-data
+
+-   Open formats
+
+-   Raw data
+
+## Code availability?
+
+![](images/Screenshot%202025-10-19%20at%2021.23.46.png){width="324"}
+
+Culina et al. 2020 (Data: 2015-2019; n = 346)
+
+## Can we do better?
+
+## Open Science is hard
+
+> "Caminante, no hay camino, se hace camino al andar" Machado et al. 1912 probably referring to open science
+
+Open, reliable and transparent science is a path, not and end point.
+
+## My path
+
+-   It took me 10 years to approach something I am comfortable calling Open Reliable Transparent science.
+
+<!-- -->
+
+-   Work iteratively. One step at a time.
+
+-   We stand on the shoulders of giants such as [rOpenSci](https://ropensci.org/) , [SORTEE](https://sortee.org/), and [Paco Rodriguez](https://github.com/Pakillo) (or you don't need to walk this path alone, find your community)
+
+## Conclusions
+
+-   It's hard work -\> Ensure to claim the credit you deserve
+
+-   You are more exposed -\> You faults will be seen as honest
+
+-   New tools and standards emerge every day -\> Work iteraltively and strive to do better, not to do it perfect.

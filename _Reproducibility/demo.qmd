@@ -1,0 +1,54 @@
+---
+title: "Multivariate analisis example"
+author: "I. Bartomeus"
+format: html
+editor: visual
+---
+
+## What are we doing?
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+You can write using the Visual editor, or the Source script in [Markdown](https://rmarkdown.rstudio.com/lesson-1.html)
+
+In this case, we want to create a simple dynamic report, but more complex webpages can be build (e.g. <https://ibartomeus.github.io/CropPollinationModels/>)
+
+## Steps:
+
+### Read data
+
+We will use here as an example data from algal hervibores.
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+#| label: read data
+#| echo: true
+#| warning: false
+
+d <- read.csv("data/Herbivore_specialisation.csv", row.names = 1)
+#head(d)
+n <- nrow(d)
+```
+
+Note that we want to show both the code and the output, so we tagged `echo: true`. The `echo: false` option disables the printing of code (only output is displayed). We don't want to see any warning (`false`).
+
+We can indicate that the data has `{r} n` columns. If you see this on html, note that I did call the last value from r directly. You can do this by typing {r} ts between ``` ``. ```
+
+### Make some analysis
+
+Next, we want to explore a bit the data. Choose your favorite analysis and play a bit.
+
+```{r}
+#| label: a simple plot
+#| echo: true
+
+#head(d)
+boxplot(d$abundance ~ d$DayNight, las = 1, xlab = "Day / Night", ylab = "Abundance")
+```
+
+There is an (untested) lack of differences between day and night samplings.
+
+## What next?
+
+You can type [equations](https://quarto.org/docs/visual-editor/technical.html), add [references](https://quarto.org/docs/authoring/citations.html), integrate [reference managers](https://academicnext.wordpress.com/2024/07/28/top-10-reference-managers-for-quarto-by-rstudio-posit/), etc...
