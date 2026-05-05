@@ -1,0 +1,80 @@
+{
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "Patterns of host use among alga- and sponge-associated amphipods",
+  "creator": [
+    {
+      "type": "Person",
+      "id": null,
+      "email": null,
+      "affiliation": "School of Biological Science",
+      "name": "Alistair G. B. Poore"
+    }
+  ],
+  "description": null,
+  "datePublished": 2000,
+  "keywords": "algas",
+  "funder": null,
+  "temporalCoverage": "1997/1997",
+  "license": "OA",
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "Shark Bay, Port Jackson, New South Wales,\nAustralia",
+    "geo": {
+      "type": "GeoShape",
+      "box": "-33.8 -33.85 151.32 151.23"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": "numeric",
+      "name": "...1",
+      "description": null
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "character",
+      "name": "Habitat",
+      "description": "host species"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "character",
+      "name": "DayNight",
+      "description": "time of day"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "numeric",
+      "name": "Replicate",
+      "description": "number of replicate"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "gr",
+      "name": "Mass",
+      "description": "mass"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "character",
+      "name": "species",
+      "description": "latin name"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "numeric",
+      "name": "abundance",
+      "description": "number of individuals"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "Herbivore_specialisation",
+      "contentUrl": null,
+      "encodingFormat": "csv"
+    }
+  ]
+}

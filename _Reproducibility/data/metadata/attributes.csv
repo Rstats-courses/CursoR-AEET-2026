@@ -1,8 +1,8 @@
 fileName,variableName,description,unitText
-Herbivore_specialisation.csv,...1,NA,NA
-Herbivore_specialisation.csv,Habitat,NA,NA
-Herbivore_specialisation.csv,DayNight,NA,NA
-Herbivore_specialisation.csv,Replicate,NA,NA
-Herbivore_specialisation.csv,Mass,NA,NA
-Herbivore_specialisation.csv,species,NA,NA
-Herbivore_specialisation.csv,abundance,NA,NA
+Herbivore_specialisation.csv,...1,NA,numeric
+Herbivore_specialisation.csv,Habitat,host species,character
+Herbivore_specialisation.csv,DayNight,time of day,character
+Herbivore_specialisation.csv,Replicate,number of replicate,numeric
+Herbivore_specialisation.csv,Mass,mass,gr
+Herbivore_specialisation.csv,species,latin name,character
+Herbivore_specialisation.csv,abundance,number of individuals,numeric
