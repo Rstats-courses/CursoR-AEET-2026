@@ -7,5 +7,16 @@ library(renv)
 renv::init()
 
 
-#to update the dependency management 
+#to update the dependency management
 renv::snapshot()
+
+
+#If you want to restore an environment
+renv::restore()
+#If you need to roll back to an even older version, take a look at renv::history() and renv::revert().
+
+#Keeping a ‘stable’ machine image is a separate challenge,
+#but Docker is one popular solution. See vignette("docker", package = "renv")
+#for recommendations on how Docker can be used together with renv.
+
+#more info: https://rstudio.github.io/renv/articles/renv.html
