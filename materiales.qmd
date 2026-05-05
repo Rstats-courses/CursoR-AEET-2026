@@ -27,7 +27,7 @@ Datasets: [zip file](data/datasets.zip) [individual datasets](https://github.com
 
 - GLMM: [slides](slides/GLMs.pdf), [scripts](https://github.com/Rstats-courses/CursoR-AEET-2026/tree/main/_scripts)
 
-- Reproducible workflows: [slides](slides/ReproducibleScience.pdf), [quarto](_scripts/quarto.zip)
+- Reproducible workflows: [slides](slides/ReproducibleScience.pdf), [quarto](_scripts/quarto_intro.html), [quarto_examples](_scripts/quarto.zip)
 
 
 ### JUEVES
