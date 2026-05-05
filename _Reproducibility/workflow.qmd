@@ -134,4 +134,6 @@ Github actions e.g. <https://github.com/ibartomeus/CropPollinationModels>
 
 ## Acknowledgement:
 
--   Previous workshops: <https://github.com/RadicalCommEcol/Open_science/blob/main/ORT_Science.qmd>
+-   Previous workshops:
+    -   <https://github.com/RadicalCommEcol/Open_science/blob/main/ORT_Science.qmd>
+    -   <https://github.com/ibartomeus/ReproMeta>
