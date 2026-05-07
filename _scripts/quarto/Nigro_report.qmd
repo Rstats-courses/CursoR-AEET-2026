@@ -1,0 +1,68 @@
+---
+title: "Seed production changes over the years in USA National Parks"
+author: "EQB"
+date: "`r Sys.Date()`"
+format: typst
+bibliography: Nigrorefs.bib
+csl: apa
+params:
+  site_name: AND
+---
+
+```{r}
+#| include: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r pckgs}
+#| include: FALSE
+#| warning: FALSE
+library(here)
+library(readr)
+library(tidyverse)
+library(ggplot2)
+library(knitr)
+```
+
+```{r}
+dt_raw <- read_csv(here("data/individual_seed_production.csv"))
+
+site_dt <- dt_raw |> 
+  filter(site_name == params$site_name)
+```
+
+## How does seed production vary across years for different plant species?
+
+This report is based in data from @nigro2025. And the report is for the site `r params$site_name`.
+
+```{r}
+#| include: FALSE
+#Summarise data
+sum_dt <- site_dt |> 
+  group_by(year, species_name) |> 
+  summarise(mean_n_seeds = mean(count, na.rm = T))
+```
+
+The average number of seeds in this site is `r round(mean(site_dt$count, na.rm = T), 1)` and the SD `r round(sd(site_dt$count, na.rm = T), 1)`.
+
+### Plot on seed counts
+
+```{r}
+#| fig-cap: "Seed trend along years"
+#| fig-align: center
+
+ggplot(sum_dt, aes(x = year, y = mean_n_seeds,
+                       color = species_name)) + 
+  geom_point() + 
+  geom_line() + 
+  scale_color_viridis_d() +
+  theme_bw() +
+  theme(legend.position = "bottom") + # Place legend at the bottom
+  guides(color = guide_legend(ncol = 3)) + # Set number of columns in the legend to 3
+  labs(x = "Mean number of seeds",
+       y = "Years",
+       color = "Species")
+```
+
