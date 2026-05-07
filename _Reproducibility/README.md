@@ -6,10 +6,10 @@
 Example of a reproducible workflow to run an analysis. The objective of this repo 
 is to use a simple example and create a dynamic pipeline to analyze the data in a reproducible way.
 
-To that end we will use:
-- Quarto: A Markdown-like syntaxis to combine text and R code and generate documents.
-- Github: A version control system to track changes as we go.
-- Zenodo: A platform to ensure stable releases with a permanent DOI.
+To that end we will use:  
+- Quarto: A Markdown-like syntaxis to combine text and R code and generate documents.  
+- Github: A version control system to track changes as we go.  
+- Zenodo: A platform to ensure stable releases with a permanent DOI.  
 
 Content of this repo:
 

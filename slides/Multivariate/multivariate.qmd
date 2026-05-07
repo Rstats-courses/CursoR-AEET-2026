@@ -1,0 +1,224 @@
+---
+title: "Multivariate"
+author: "I. Bartomeus"
+format: revealjs
+editor: visual
+---
+
+# **Multivariate data**
+
+Multivariate != multiple regression
+
+Multivariate means we have two or more *response* variables
+
+We are interested in learning about the common patterns or modes of variation among those multiple response variables
+
+Multivariate data require special statistical methods
+
+# Typical case in ecology
+
+Species composition per site.
+
+We want to know how multiple species abundance change e.g. along a gradient.
+
+# Packages in R
+
+`Vegan` -\> Very complete and updated. US tradiction
+
+`ade4` -\> Quite complete. French tradition.
+
+# Summarizing community data
+
+-   Diversity indexes (see `diversity(BCI)` in Vegan)
+
+-   Beta diversity indexes (`betadiver( )` in Vegan)
+
+-   Rarefaction (`rarecurve(BCI, sample = min(rs))` in Vegan)
+
+# Different questions, different methods
+
+-   Clustering
+
+    ```{r}
+    #| eval: false
+    #| echo: true
+    #clustering
+    hclust() #uses disimilarity indexes (see below)
+
+    #K-means
+    kmeans() #uses raw data
+    ```
+
+-   Mantel test (or Procrustes)
+
+    ```{r}
+    #| eval: false
+    #| echo: true
+    mantel() #low power, better use procrustes
+    procrustes()
+    ```
+
+# Different questions, different methods
+
+-   Ordination (unconstrained)
+
+    -   **Principal Components Analysis (PCA)**
+
+    -   Correspondence Analysis (CA)
+
+    -   Principal Coordinates Analysis (PCO or PCoA)
+
+    -   **Non-metric Multidimensional Scaling (NMDS)**
+
+# Ordination
+
+Principal Components Analysis (PCA) is a linear method — most useful for environmental data or sometimes with species data and short gradients
+
+Correspondence Analysis (CA) is a unimodal method — most useful for species data, especially where non-linear responses are observed
+
+Principal Coordinates Analysis (PCO) and Non-metric Multidimensional Scaling (NMDS) — can be used for any kind of data
+
+# PCA
+
+Unconstrained = No explanatory variables
+
+Summarizes a correlation matrix
+
+Create as many axes as variables. Each of these subsequent axes is uncorrelated with previous axes — they are orthogonal — the variance each axis explains is uncorrelated.
+
+![](images/Screenshot%202026-05-05%20at%2017.18.18.png)
+
+# Correspondence analysis
+
+(CA) is *in princple* very similar to PCA — a weighted form of PCA.
+
+Used when you have species abundance data across sites.
+
+Distance based method are more commonly used (see below)
+
+# **Principal Coordinates Analysis**
+
+Distance based method.
+
+NMDS is more flexible (see below)
+
+# NMDS
+
+-   Maps a dissimilarity matrix in 2D.
+
+-   Stress measures its accuracy.
+
+# It's all about your dissimilarity metric
+
+-   Bianary:
+
+    -   Jaccard: Mathematically simple and intuitive for expressing overlap as a percentage.
+
+    -   Sorensen: Places more weight on shared species.
+
+# Dissimilarity metrics
+
+-   Quantitative:
+
+    -   Euclidean: Simple distance, good for e.g. distance between sites.
+
+    -   Bray-Curtis \[0-1\]: Ignores cases in which the species is absent in both community samples, and it is dominated by the abundant species so that rare species add very little to the value of the coefficient.
+
+# Dissimilarity metrics
+
+-   Morisita \[0-1\]: Almost completely independent of sample size and species diversity levels but extremely sensitive to dominant species due to the use of squared abundance terms.
+
+-   Morisita-Horn \[0-1\]: A version of the index that is more stable for quantitative community overlap. Comparing communities when sampling effort or richness varies significantly between sites.
+
+-   Kulczynski: Weigth more rare species.
+
+-   Gower: Allows mixing categorical and quantitative variables
+
+# In R
+
+|  |  |  |
+|------------------------|------------------------|------------------------|
+| **Index** | **R Function Call** | **Notes** |
+| **Jaccard** | `vegdist(x, method = "jaccard", binary = TRUE)` | Classic binary index for similarity. |
+| **Sørensen** | `vegdist(x, method = "bray", binary = TRUE)` | The binary version of Bray-Curtis is mathematically equivalent to Sørensen. |
+
+# In R
+
+|  |  |  |
+|------------------------|------------------------|------------------------|
+| **Index** | **R Function Call** | **Notes** |
+| **Bray-Curtis** | `vegdist(x, method = "bray")` | Typical for abundance data in ecology. |
+| **Morisita** | `vegdist(x, method = "morisita")` | Varying sample sizes; only works with **integer counts**. |
+| **Morisita-Horn** | `vegdist(x, method = "horn")` | Handles non-integer/standardized data. |
+
+# Further reading:
+
+#Best is Legendre book numerical ecology #(only found Krebs online): <http://www.zoology.ubc.ca/~krebs/downloads/krebs_chapter_12_2014.pdf>
+
+# Constrained methods
+
+"Constrained ordination relates the **response data** (species) directly to **explanatory data** (environmental variables). It only displays the variation in the species data that can be explained by the provided environmental variables."
+
+-   RDA (constrained version of PCA)
+
+-   CCA (constrained version of CA)
+
+Note that the axes are "constrained" to be linear combinations of the environmental variables. Any variation in the species data that is not related to those variables is "thrown away" or moved to residual (unconstrained) axes.
+
+If you want to know "What are the biggest patterns in my data?", use **unconstrained**. If you want to know "How much of my data is explained by these specific environmental factors?", use **constrained**.
+
+# PERMANOVA
+
+MANOVA is the multivariate form of ANOVA
+
+Decompose variation in the responses into
+
+1.  variation within groups
+
+2.  variation between groups
+
+PERMANOVA use permutation tests to assess the *importance* of fitted models — the data are shuffled in some way and the model refitted to derive a Null distribution under some hypothesis of *no effect.*
+
+# PERMANOVA
+
+*vegan* has four different ways to do essentially do this kind of analysis
+
+1.  `adonis()` — implements Anderson (2001) - (deprecated)
+
+2.  `adonis2()` — **implements McArdle & Anderson (2001)**
+
+3.  `dbrda()` — implementation based on McArdle & Anderson (2001) - inherits from `rda()` and `cca()`
+
+4.  `capscale()` — implements Legendre & Anderson (1999)
+
+# **The dispersion problem**
+
+Anderson (2001) noted that PERMANOVA could confound *location* & *dispersion* effects
+
+If one or more groups are more variable — dispersed around the centroid — than the others, this can result in a false detection of a difference of means — a *location* effect.
+
+`betadisper()`
+
+# A new approach to multivariate analysis
+
+Generalized Linear Latent Variable Models (GLLVMs) 
+
+"bring tools and capabilities from classic (mixed-effects) regression models to multivariate community analysis"
+
+Flexibility of **Generalized Linear Models (GLMs)** combined with dimensionality reduction.
+
+Axes(components) = Latent variables
+
+# GLLVMs
+
+![](images/Screenshot%202026-05-06%20at%2008.45.54.png)
+
+# Further reading
+
+Check out the amazing course by Gavin Simpson: <https://github.com/gavinsimpson/physalia-multivariate> (from which I borrowe many ideas).
+
+NMDS:\
+<http://www.davidzeleny.net/anadat-r/doku.php/en:pcoa_nmds> <https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/>
+
+For multivariate based on GLM-type models:\
+<http://environmentalcomputing.net/introduction-to-mvabund/> <https://github.com/BertvanderVeen/BES2020GLLVMworkshop>
